@@ -14,6 +14,8 @@
       <div class="alert alert-<%= key %>" role="alert"><%=value %></div>
     <% end %>
     
+    <%= current_user %>
+    
     <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
       <div class="container">
         <%= link_to root_path do %>
@@ -23,17 +25,17 @@
           <% if logged_in? %>
            <li>
              <%= link_to "#" do %>
-              <%=image_tag "icons/heart.png" %>
+              <%=image_tag 'icons/heart.png' %>
           　 <% end %>
            </li>
            <li>
-             <%= link_to "#" do %>
-              <%=image_tag "icons/camera.png" %>
+             <%= link_to new_topic_path do %>
+              <%= image_tag 'icons/camera.png' %>
              <% end %>
            </li>
            <li>
              <%= link_to logout_path, method: :delete do %>
-              <%= image_tag "icons/logout.png" %>
+              <%= image_tag 'icons/logout.png' %>
              <% end %>
            </li>
           <% else %>
