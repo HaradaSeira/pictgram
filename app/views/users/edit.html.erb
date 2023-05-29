@@ -1,0 +1,12 @@
+<%= form_for(@user, url:{ controller: 'posts' action: 'update', id: @user.id}) do |form| %>
+  <!-- 他のフィールド（例: 名前、メールアドレス） -->
+
+  <div class="field">
+    <%= form.label :profile_image, 'プロフィール画像' %>
+    <%= form.file_field :profile_image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit '更新' %>
+  </div>
+<% end %>

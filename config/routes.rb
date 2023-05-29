@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'topics/new'
+
   get 'sessions/new'
   get 'users/new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -17,7 +17,9 @@ Rails.application.routes.draw do
   post '/favorites', to: 'favorites#create'
   delete '/favorites', to: 'favorites#destroy'
   
- resource :comments
+  get '/profimage', to: 'profimage#new'
+  post '/profimage', to: 'profimage#create'
+  delete '/profimage', to: 'profimage#destroy'
   
   get     '/login',  to: 'sessions#new'
   post    '/login',  to: 'sessions#create'

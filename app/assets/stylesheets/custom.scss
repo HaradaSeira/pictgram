@@ -108,25 +108,28 @@ h1, h2 {
       margin-bottom: 20px;
       width: 100%;
     }
-    
     .like-btn{
       width: 35px;
       height: 30px;
       margin-left: 20px;
-      color: #ffffff;
+      color: #808080;
     }
     
     .unlike-btn {
       width: 35px;
       height: 30px;
       margin-left: 20px;
-      background-color: #ffffff;
+      background-color: #e54747;
     }
     
     .topic-index-icon {
       width: 35px;
       height: 30px;
       margin-left: 20px;
+    }
+    
+    .profimage-new-wrapper {
+     padding-top: 120px;
     }
   }
 }
