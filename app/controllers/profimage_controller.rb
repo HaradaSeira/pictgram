@@ -4,7 +4,7 @@ class ProfimageController < ApplicationController
   end
   def create
     # binding.pry
-    @profimage = current_user.profimage.new(profimage_params)
+    @profimage = current_user.build_profimage(profimage_params)
     
     if @profimage.save
       redirect_to profimage_path, success: 'プロフィール画像の投稿に成功しました'
