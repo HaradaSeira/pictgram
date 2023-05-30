@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'photos/index'
   get 'sessions/new'
   get 'users/new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -7,6 +8,8 @@ Rails.application.routes.draw do
   get 'pages/help'
   get 'pages/link'
   
+  get '/photos', to: 'photos#index', as: 'photo_index'
+
   resources :users
   resources :topics 
   
@@ -25,5 +28,5 @@ Rails.application.routes.draw do
   post    '/login',  to: 'sessions#create'
   delete  '/logout',  to: 'sessions#destroy'
   
- 
+  
 end

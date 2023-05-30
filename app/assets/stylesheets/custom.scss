@@ -60,11 +60,16 @@ h1, h2 {
     padding: 0px;
     margin-top: 15px;
   }
-
-  img {
+  
+  .white-icon {
+   filter: brightness(0) invert(1);
+   position: relative;
+  } 
+  
+   img {
     height: 40px;
-  }
-}
+   }
+ } 
 
 .btn-black {
   color: #565656;
@@ -128,8 +133,18 @@ h1, h2 {
       margin-left: 20px;
     }
     
+    .comment-heading {
+      margin-left: 20px;
+    }
+    
     .profimage-new-wrapper {
      padding-top: 120px;
+    }
+    
+    .profile-image {
+     width: 50px; 
+     height: 50px;
+     border-radius: 50%;
     }
   }
 }
